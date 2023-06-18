@@ -1,0 +1,25 @@
+<div class="container" >
+  <div class="card">
+    <div class="card-header">Products List</div>
+    <div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th> <th>Date D'infraction</th> <th>Marque</th><th>Puissance</th><th>Modele</th><th>ProprietaireId</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of customer">
+          <td> {{p.id}}</td>
+          <td> {{p.DateInf}}</td>
+          <td> {{p.Marque}}</td>
+          <td> {{p.Puissance}}</td>
+          <td> {{p.Modele}}</td>
+          <td> {{p.ProprietaireId}}</td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
